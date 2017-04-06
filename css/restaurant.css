@@ -159,14 +159,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
-.navbar-custom .navbar-toggle {
-  background-color: #fed136;
-  border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-size: 12px;
-}
+
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: #fed136;
@@ -197,16 +190,13 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
+    
     border: none;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+  
+      
   }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;

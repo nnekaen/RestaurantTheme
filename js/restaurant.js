@@ -1,4 +1,4 @@
-// Bootstrap Theme JavaScript
+// Agency Theme JavaScript
 
 (function($) {
     "use strict"; // Start of use strict
@@ -7,26 +7,26 @@
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scroll: ($($anchor.attr('href')).offset().top - 0)
-        }, 50);
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
 
     // Highlight the top nav as scrolling occurs
-    $('body').css({
+    $('body').scrollspy({
         target: '.navbar-fixed-top',
-        offset: -1
+        offset: 51
     });
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function(){ 
-            $('.navbar-toggle:invisible').click();
+            $('.navbar-toggle:visible').click();
     });
 
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
-            top: 10
+            top: 100
         }
     })
 
